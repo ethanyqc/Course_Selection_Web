@@ -15,12 +15,12 @@ $conn = new mysqli("localhost", "cs377", "cs377_s17","CourseDB");
 if  (mysqli_connect_errno()) {
     printf("Connect failed: %s\n", mysqli_connect_error());
  //exit();
-} 
+}
 ?>
 
 
 <?php
-  if(isset($_POST['submit'])) 
+  if(isset($_POST['submit']))
   {
 
     $major = $_POST['major'];
@@ -54,7 +54,7 @@ if  (mysqli_connect_errno()) {
     $gradSem="";
     $gradYear=0;
 
-   
+
 
     }
 
@@ -259,5 +259,3 @@ echo " to graduate for degree: ".$major."  ".$major2;
 
 </body>
 </html>
-
-
